@@ -5,36 +5,38 @@
 }
 
 @model Party.Models.Invited
-<form method="post" asp-action="RsvpForm">
-    @*<div class="row">*@
-    <p>Вашето име</p>
-    <input class="row m-1 form-control" asp-for="Name" />
-    <br />
+    <body style="background-color: #8ec8d6;">
+        <form method="post" asp-action="RsvpForm">
+            @*<div class="row">*@
+            <p>Вашето име</p>
+            <input class="row m-1 form-control" asp-for="Name" />
+            <br />
 
-    <p>Вашият Email</p>
-    <input class="row m-1 form-control" asp-for="Email" />
-    <br />
+            <p>Вашият Email</p>
+            <input class="row m-1 form-control" asp-for="Email" />
+            <br />
 
-    <p>Вашият телефон</p>
-    <input class="row m-1 form-control" asp-for="PhoneNumber" />
-    <br />
+            <p>Вашият телефон</p>
+            <input class="row m-1 form-control" asp-for="PhoneNumber" />
+            <br />
 
-    <p>Ще присъствате ли?</p>
-    <select asp-for="WillPresent" class="form-control">
-        @*<option select>Изберете опция</option>*@
-        <option>Да, ще дойда!</option>
-        <option>Не мога да присъствам.</option>
-    </select>
-    <br />
+            <p>Ще присъствате ли?</p>
+            <select asp-for="WillPresent" class="form-control">
+                @*<option select>Изберете опция</option>*@
+                <option>Да, ще дойда!</option>
+                <option>Не мога да присъствам.</option>
+            </select>
+            <br />
 
-    <button type="submit" class="col-3 btn btn-success m-1">Save</button>
-    <div asp-validation-summary="All" class="text-danger"></div>
+            <button type="submit" class="col-3 btn btn-success m-1">Save</button>
+            <div asp-validation-summary="All" class="text-danger"></div>
 
-    <br />
-    <br />
-    <br />
+            <br />
+            <br />
+            <br />
 
-    <button asp-action="ListResponses" class="col-3 btn btn-primary m-1">Списък с присъстващи</button>
-    <button asp-action="Index" class="col-3 btn btn-primary m-1">Начална страница</button>
-    @*</div>*@
-</form>
+            <button asp-action="ListResponses" class="col-3 btn btn-primary m-1">Списък с присъстващи</button>
+            <button asp-action="Index" class="col-3 btn btn-primary m-1">Начална страница</button>
+            @*</div>*@
+        </form>
+    </body>
