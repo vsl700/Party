@@ -13,9 +13,9 @@ namespace Party.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly ApplicationDBContext _db;
+        private readonly ResponsesDb _db;
 
-        public HomeController(ILogger<HomeController> logger, ApplicationDBContext db)
+        public HomeController(ILogger<HomeController> logger, ResponsesDb db)
         {
             _logger = logger;
             _db = db;

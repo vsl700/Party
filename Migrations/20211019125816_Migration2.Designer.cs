@@ -8,7 +8,7 @@ using Party.Data;
 
 namespace Party.Migrations
 {
-    [DbContext(typeof(ApplicationDBContext))]
+    [DbContext(typeof(ResponsesDb))]
     [Migration("20211019125816_Migration2")]
     partial class Migration2
     {

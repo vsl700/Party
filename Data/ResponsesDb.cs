@@ -3,12 +3,12 @@ using Party.Models;
 
 namespace Party.Data
 {
-    public class ApplicationDBContext : DbContext
+    public class ResponsesDb : DbContext
     {
         public DbSet<Invited> Invited { get; set; }
 
 
-        public ApplicationDBContext(DbContextOptions<ApplicationDBContext> options) : base(options)
+        public ResponsesDb(DbContextOptions<ResponsesDb> options) : base(options)
         {
 
         }
